@@ -36,11 +36,11 @@ def check_password_strength(password):
 
     # Strength result
     if score <= 2:
-        strength = "Weak ❌"
+        strength = "Weak "
     elif score == 3 or score == 4:
-        strength = "Medium ⚠️"
+        strength = "Medium "
     else:
-        strength = "Strong ✅"
+        strength = "Strong "
 
     return strength, suggestions
 
